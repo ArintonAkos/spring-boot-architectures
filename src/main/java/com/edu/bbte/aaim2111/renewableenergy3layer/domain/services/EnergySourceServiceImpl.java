@@ -6,8 +6,8 @@ import com.edu.bbte.aaim2111.renewableenergy3layer.domain.models.entities.Energy
 import com.edu.bbte.aaim2111.renewableenergy3layer.domain.models.entities.User;
 import com.edu.bbte.aaim2111.renewableenergy3layer.domain.models.mappers.EnergySourceMapper;
 import com.edu.bbte.aaim2111.renewableenergy3layer.domain.services.interfaces.IEnergySourceService;
-import com.edu.bbte.aaim2111.renewableenergy3layer.persistance.interfaces.IEnergySourceRepository;
-import com.edu.bbte.aaim2111.renewableenergy3layer.persistance.interfaces.IUserRepository;
+import com.edu.bbte.aaim2111.renewableenergy3layer.persistance.repositories.IEnergySourceRepository;
+import com.edu.bbte.aaim2111.renewableenergy3layer.persistance.repositories.IUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

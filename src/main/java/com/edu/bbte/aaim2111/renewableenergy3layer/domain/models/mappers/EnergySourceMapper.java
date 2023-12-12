@@ -11,14 +11,16 @@ import org.mapstruct.factory.Mappers;
 public interface EnergySourceMapper {
     EnergySourceMapper INSTANCE = Mappers.getMapper(EnergySourceMapper.class);
 
+    @Mapping(target = "id", ignore = true)
     @Mapping(target = "provider", ignore = true)
     EnergySource energySourceCreateUpdateDTOToEnergySource(EnergySourceCreateUpdateDTO dto);
 
     @Mapping(target = "id", source = "id")
     @Mapping(target = "type", source = "type")
     @Mapping(target = "capacity", source = "capacity")
-    @Mapping(target = "isAvailable", source = "isAvailable")
+    @Mapping(target = "java(energySource.isAvailable())", expression = "java(energySource.isAvailable())")
     @Mapping(target = "stock", source = "stock")
+    @Mapping(target = "price", source = "price")
     @Mapping(target = "providerId", source = "provider.id")
     EnergySourceDisplayDTO energySourceToEnergySourceDisplayDTO(EnergySource energySource);
 }

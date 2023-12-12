@@ -11,6 +11,7 @@ public class EnergySourceDisplayDTO {
     private Double capacity;
     private boolean isAvailable;
     private Double stock;
+    private Double price;
 
     private Long providerId;
 }

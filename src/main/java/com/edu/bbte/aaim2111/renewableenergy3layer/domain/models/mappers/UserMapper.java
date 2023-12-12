@@ -13,6 +13,7 @@ import java.util.List;
 public interface UserMapper {
     UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
 
+    @Mapping(target = "id", ignore = true)
     User userCreateUpdateDTOToUser(UserCreateUpdateDTO dto);
 
     @Mapping(target = "id", source = "id")

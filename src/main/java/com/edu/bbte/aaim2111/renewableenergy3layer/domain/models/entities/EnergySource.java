@@ -2,10 +2,12 @@ package com.edu.bbte.aaim2111.renewableenergy3layer.domain.models.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
+@Data
 @NoArgsConstructor
 public class EnergySource {
     @Id
@@ -31,11 +33,12 @@ public class EnergySource {
     @Setter
     private User provider;
 
-    public EnergySource(String type, Double capacity, boolean isAvailable, Double stock, User provider) {
+    public EnergySource(String type, Double capacity, boolean isAvailable, Double stock, Double price, User provider) {
         this.type = type;
         this.capacity = capacity;
         this.isAvailable = isAvailable;
         this.stock = stock;
+        this.price = price;
         this.provider = provider;
     }
 
