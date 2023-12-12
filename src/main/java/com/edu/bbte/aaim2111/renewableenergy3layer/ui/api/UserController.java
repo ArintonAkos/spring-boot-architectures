@@ -2,7 +2,6 @@ package com.edu.bbte.aaim2111.renewableenergy3layer.ui.api;
 
 import com.edu.bbte.aaim2111.renewableenergy3layer.domain.models.dto.user.UserCreateUpdateDTO;
 import com.edu.bbte.aaim2111.renewableenergy3layer.domain.models.dto.user.UserDisplayDTO;
-import com.edu.bbte.aaim2111.renewableenergy3layer.domain.models.mappers.UserMapper;
 import com.edu.bbte.aaim2111.renewableenergy3layer.domain.services.interfaces.IUserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
