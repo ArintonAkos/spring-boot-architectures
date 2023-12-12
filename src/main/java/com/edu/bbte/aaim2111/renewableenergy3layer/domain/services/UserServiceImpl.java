@@ -24,6 +24,7 @@ public class UserServiceImpl implements IUserService {
     public UserDisplayDTO createUser(UserCreateUpdateDTO userCreateUpdateDTO) {
         User user = userMapper.userCreateUpdateDTOToUser(userCreateUpdateDTO);
         user = userRepository.save(user);
+
         return userMapper.userToUserDisplayDTO(user);
     }
 
