@@ -9,7 +9,7 @@ public class EnergySourceDisplayDTO {
     private Long id;
     private String type;
     private Double capacity;
-    private boolean isAvailable;
+    private boolean available;
     private Double stock;
     private Double price;
 

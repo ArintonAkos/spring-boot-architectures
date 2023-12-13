@@ -21,7 +21,7 @@ public class EnergySourceJpaEntity {
     @NotNull
     private Double capacity;
 
-    private boolean isAvailable;
+    private boolean available;
 
     @NotNull
     private Double stock;
@@ -34,10 +34,10 @@ public class EnergySourceJpaEntity {
     @Setter
     private UserJpaEntity provider;
 
-    public EnergySourceJpaEntity(String type, Double capacity, boolean isAvailable, Double stock, Double price, UserJpaEntity provider) {
+    public EnergySourceJpaEntity(String type, Double capacity, boolean available, Double stock, Double price, UserJpaEntity provider) {
         this.type = type;
         this.capacity = capacity;
-        this.isAvailable = isAvailable;
+        this.available = available;
         this.stock = stock;
         this.price = price;
         this.provider = provider;

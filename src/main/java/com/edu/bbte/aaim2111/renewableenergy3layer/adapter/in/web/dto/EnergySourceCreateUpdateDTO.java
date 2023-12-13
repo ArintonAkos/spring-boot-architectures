@@ -13,7 +13,7 @@ public class EnergySourceCreateUpdateDTO {
     @NotNull
     private Double capacity;
 
-    private boolean isAvailable;
+    private boolean available;
 
     @NotNull
     private Double stock;
