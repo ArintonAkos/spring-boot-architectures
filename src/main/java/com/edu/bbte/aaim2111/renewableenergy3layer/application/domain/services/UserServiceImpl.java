@@ -4,7 +4,7 @@ import com.edu.bbte.aaim2111.renewableenergy3layer.application.port.out.UserPers
 import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.UserCreateUpdateDTO;
 import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.UserDisplayDTO;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.domain.entities.User;
-import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistance.UserMapper;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence.UserMapper;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.port.in.UserServicePort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

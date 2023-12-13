@@ -1,4 +1,4 @@
-package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistance;
+package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence;
 
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.domain.entities.User;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.port.out.UserPersistencePort;

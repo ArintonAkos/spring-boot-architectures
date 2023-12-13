@@ -6,7 +6,7 @@ import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.EnergySour
 import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.EnergySourceDisplayDTO;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.domain.entities.EnergySource;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.domain.entities.User;
-import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistance.EnergySourceMapper;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence.EnergySourceMapper;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.port.in.EnergySourceServicePort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistance;
+package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence;
 
 
 import jakarta.persistence.*;
@@ -27,4 +27,10 @@ public class UserJpaEntity {
 
     @NotBlank(message = "Password is required")
     private String password;
+
+    public UserJpaEntity(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
 }

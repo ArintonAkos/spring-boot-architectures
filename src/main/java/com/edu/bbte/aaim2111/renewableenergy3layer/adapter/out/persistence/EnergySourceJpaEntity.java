@@ -1,4 +1,4 @@
-package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistance;
+package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -33,4 +33,13 @@ public class EnergySourceJpaEntity {
     @JoinColumn(name = "user_id", nullable = false)
     @Setter
     private UserJpaEntity provider;
+
+    public EnergySourceJpaEntity(String type, Double capacity, boolean isAvailable, Double stock, Double price, UserJpaEntity provider) {
+        this.type = type;
+        this.capacity = capacity;
+        this.isAvailable = isAvailable;
+        this.stock = stock;
+        this.price = price;
+        this.provider = provider;
+    }
 }

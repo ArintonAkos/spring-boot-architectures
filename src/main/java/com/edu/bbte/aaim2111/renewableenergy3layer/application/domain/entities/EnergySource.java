@@ -15,15 +15,6 @@ public class EnergySource {
     private Double price;
     private User provider;
 
-    public EnergySource(String type, Double capacity, boolean isAvailable, Double stock, Double price, User provider) {
-        this.type = type;
-        this.capacity = capacity;
-        this.isAvailable = isAvailable;
-        this.stock = stock;
-        this.price = price;
-        this.provider = provider;
-    }
-
     public void decreaseStock(Double amount) {
         if (this.stock != null && this.stock >= amount) {
             this.stock -= amount;
