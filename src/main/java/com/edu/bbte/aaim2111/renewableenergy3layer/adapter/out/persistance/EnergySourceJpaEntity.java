@@ -9,6 +9,7 @@ import lombok.Setter;
 @Entity
 @Data
 @NoArgsConstructor
+@Table(name = "energy_sources")
 public class EnergySourceJpaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
