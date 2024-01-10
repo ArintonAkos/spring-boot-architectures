@@ -1,7 +1,9 @@
-package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence;
+package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.mapper;
 
-import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.EnergySourceCreateUpdateDTO;
-import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.EnergySourceDisplayDTO;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.incoming.EnergySourceCreateUpdateDTO;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.outgoing.EnergySourceDisplayDTO;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence.EnergySourceJpaEntity;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence.UserJpaEntity;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.domain.entities.EnergySource;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.domain.entities.User;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.port.out.UserPersistencePort;

@@ -1,5 +1,6 @@
 package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence;
 
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.mapper.UserMapper;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.domain.entities.User;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.port.out.UserPersistencePort;
 import org.springframework.beans.factory.annotation.Autowired;

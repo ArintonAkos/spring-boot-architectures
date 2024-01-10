@@ -1,11 +1,11 @@
 package com.edu.bbte.aaim2111.renewableenergy3layer.application.domain.services;
 
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.port.out.EnergySourcePersistencePort;
-import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.EnergySourceCreateUpdateDTO;
-import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.EnergySourceDisplayDTO;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.incoming.EnergySourceCreateUpdateDTO;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.outgoing.EnergySourceDisplayDTO;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.domain.entities.EnergySource;
-import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence.EnergySourceMapper;
-import com.edu.bbte.aaim2111.renewableenergy3layer.application.port.in.EnergySourceServicePort;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.mapper.EnergySourceMapper;
+import com.edu.bbte.aaim2111.renewableenergy3layer.application.port.in.EnergySourceUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class EnergySourceServiceImpl implements EnergySourceServicePort {
+public class EnergySourceServiceImpl implements EnergySourceUseCase {
     private final EnergySourcePersistencePort energySourcePersistencePort;
     private final EnergySourceMapper energySourceMapper;
 

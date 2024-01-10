@@ -1,7 +1,8 @@
-package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence;
+package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.mapper;
 
-import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.UserCreateUpdateDTO;
-import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.UserDisplayDTO;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.incoming.UserCreateUpdateDTO;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.outgoing.UserDisplayDTO;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence.UserJpaEntity;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.domain.entities.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

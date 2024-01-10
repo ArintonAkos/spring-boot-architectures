@@ -1,8 +1,8 @@
-package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web;
+package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.controller;
 
-import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.EnergySourceCreateUpdateDTO;
-import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.EnergySourceDisplayDTO;
-import com.edu.bbte.aaim2111.renewableenergy3layer.application.port.in.EnergySourceServicePort;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.incoming.EnergySourceCreateUpdateDTO;
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.outgoing.EnergySourceDisplayDTO;
+import com.edu.bbte.aaim2111.renewableenergy3layer.application.port.in.EnergySourceUseCase;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,10 +15,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/energy-sources")
 public class EnergySourceController {
-    private final EnergySourceServicePort energyService;
+    private final EnergySourceUseCase energyService;
 
     @Autowired
-    public EnergySourceController(EnergySourceServicePort energyService) {
+    public EnergySourceController(EnergySourceUseCase energyService) {
         this.energyService = energyService;
     }
 

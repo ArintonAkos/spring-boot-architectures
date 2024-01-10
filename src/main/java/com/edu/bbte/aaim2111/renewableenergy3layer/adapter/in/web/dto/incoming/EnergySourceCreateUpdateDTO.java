@@ -1,4 +1,4 @@
-package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto;
+package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.incoming;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;

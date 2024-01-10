@@ -1,8 +1,8 @@
 package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence;
 
+import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.in.web.dto.mapper.EnergySourceMapper;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.domain.entities.EnergySource;
 import com.edu.bbte.aaim2111.renewableenergy3layer.application.port.out.EnergySourcePersistencePort;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
