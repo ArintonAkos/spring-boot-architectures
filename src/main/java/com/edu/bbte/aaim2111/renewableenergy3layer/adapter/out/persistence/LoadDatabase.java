@@ -1,4 +1,4 @@
-package com.edu.bbte.aaim2111.renewableenergy3layer;
+package com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence;
 
 import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence.EnergySourceJpaEntity;
 import com.edu.bbte.aaim2111.renewableenergy3layer.adapter.out.persistence.EnergySourceRepository;
