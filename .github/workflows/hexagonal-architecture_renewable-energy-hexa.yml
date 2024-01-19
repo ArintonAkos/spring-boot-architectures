@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: java-app
-          path: build/libs/*.jar
+          path: ${{ github.workspace }}/build/libs/*.jar
 
   deploy:
     runs-on: ubuntu-latest
@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'renewable-energy-hexa'
           slot-name: 'Production'
-          package: '*.jar'
+          package: 'RenewableEnergy3Layer.jar'
