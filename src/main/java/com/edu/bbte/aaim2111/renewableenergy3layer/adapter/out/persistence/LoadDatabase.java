@@ -13,6 +13,10 @@ public class LoadDatabase {
     @Bean
     CommandLineRunner initDatabase(UserRepository userRepository, EnergySourceRepository energySourceRepository) {
         return args -> {
+            if (userRepository.count() > 0) {
+                return;
+            }
+
             UserJpaEntity user = userRepository.save(new UserJpaEntity("username", "user@example.com", "password"));
             UserJpaEntity admin = userRepository.save(new UserJpaEntity("admin", "admin@example.com", "password"));
 
