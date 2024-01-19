@@ -5,7 +5,6 @@ plugins {
 }
 
 group = 'com.edu.bbte.aaim2111'
-version = '0.0.1-SNAPSHOT'
 
 java {
 	sourceCompatibility = '17'
